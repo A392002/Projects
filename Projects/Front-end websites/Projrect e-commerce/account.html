@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title> register- Jolio</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="https://kit.fontawesome.com/55fa0882f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="Project.html"><img src="logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="Project.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+
+            </nav>
+            <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+
+        </div>
+    </div>
+    <!-- login -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col2">
+                    <img src="Jolio (6).png" width="100%">
+                </div>
+                <div class="col2">
+                    <div class="form-container">
+                        <div>
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Selector">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="User Name"required>
+                            <input type="password" placeholder="Password" required>
+                            <button class="bn30" type="submit">Login</button>
+                            <br>
+                            <a href="">Forget Password</a>
+                        </form>
+                        <form id="RegisterForm">
+                            <input type="text" placeholder="User Name" required>
+                            <input type="email" placeholder="Email"required>
+                            <input type="password" placeholder="Password" required>
+                            <button class="bn30" type="submit">Register</button>
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and Ios Mobile.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png" alt="">
+                        <img src="app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="final logo.png" style="width: 300px;" >
+                    <p>Download App for Android and Ios Mobile.</p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>License</li>
+                        <li>Terms of service </li>
+                        <li>Return Policy</li>
+                        <li>Refunds</li>
+
+                    </ul>
+                </div>
+                <div class="footer-col3">
+                    <h3>Follow US</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2020 - 2023 </p>
+        </div>
+    </div>
+
+    <!----------------------------- js for toggle menu ---------------------->
+    <!-----------------------------       copy-past    ------------------------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+        <!-----------------------------  js for  toggle form   ------------------------>
+    <script>
+        var LoginForm = document.getElementById("LoginForm"); 
+        var RegisterForm = document.getElementById("RegisterForm"); 
+        var Selector = document.getElementById("Selector");
+        function register(){
+            RegisterForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Selector.style.transform = "translateX(100px)";
+        }
+        function login(){
+            RegisterForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Selector.style.transform = "translateX(0px)";
+
+        }
+    </script>
+
+
+</body>
+
+</html>

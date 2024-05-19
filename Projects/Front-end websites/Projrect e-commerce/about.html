@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title> About | Jolio</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="https://kit.fontawesome.com/55fa0882f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="Project.html"><img src="final logo.png" width="180px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="Project.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Account</a></li>
+                    </ul>
+
+                </nav>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+
+            <div class="row">
+                <div class="col2">
+                    <h1> jolio | Company </h1>
+                    <p>“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum vero modi nulla. Incidunt aut
+                        aspernatur nihil quibusdam aliquam, laborum fuga natus? Labore soluta, veritatis odio,
+                        aspernatur voluptas deserunt cupiditate nostrum exercitationem earum maxime, saepe nam! Sapiente
+                        debitis repellat dolorum dicta amet asperiores nihil, maxime, itaque sequi magnam ea veritatis
+                        perspiciatis aut autem obcaecati optio illum quod, eaque iusto repudiandae? Esse!”</p>
+                    <a href="login.html"><button class="bn632-hover bn24">Learn More &#10137;</button></a>
+
+                </div>
+
+                <div class="col2">
+                    <img src="Jolio (6).png">
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and Ios Mobile.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png" alt="">
+                        <img src="app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="final logo.png" style="width: 300px;">
+                    <p>Download App for Android and Ios Mobile.</p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>License</li>
+                        <li>Terms of service </li>
+                        <li>Return Policy</li>
+                        <li>Refunds</li>
+
+                    </ul>
+                </div>
+                <div class="footer-col3">
+                    <h3>Follow US</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2020 - 2023 </p>
+        </div>
+    </div>
+
+    <!----------------------------- js for toggle menu ---------------------->
+    <!-----------------------------       copy-past    ------------------------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

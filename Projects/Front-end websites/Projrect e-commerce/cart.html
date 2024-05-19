@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title> Purchase | Jolio</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="https://kit.fontawesome.com/55fa0882f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="Project.html"><img src="final logo.png" width="180px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="Project.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Account</a></li>
+                </ul>
+
+            </nav>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+
+        </div>
+    </div>
+    <!-- ----------------cart------------ -->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th> Product</th>
+                <th> Quantity</th>
+                <th> Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="pexels-200-200.jpg" alt="">
+                        <div>
+                            <p>T-Shirt</p>
+                            <small>Price: $73.00</small>
+                            <br>
+                            <a href="" class="bn3">Remove</a>
+
+
+                        </div>
+                    </div>
+                </td>
+
+                <td> <input type="number" value="1"></td>
+                <td> $73.00</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="pexels-200-200-3.jpg" alt="">
+                        <div>
+                            <p>Lipstick</p>
+                            <small>Price: $40.00</small>
+                            <br>
+                            <a href="" class="bn3">Remove</a>
+
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- <td> Product Name</td> -->
+                <td> <input type="number" value="1"></td>
+                <td> $40.00</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="pexels-200-200-2.jpg" alt="">
+                        <div>
+                            <p>Camera</p>
+                            <small>Price: $300.00</small>
+                            <br>
+                            <a href="" class="bn3">Remove</a>
+
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- <td> Product Name</td> -->
+                <td> <input type="number" value="1"></td>
+                <td> $300.00</td>
+
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$413.00</td>
+                </tr>
+                <tr>
+                    <td>Value added tax</td>
+                    <td>$25.00</td>
+                </tr>
+                <tr>
+                    <td>Coupon</td>
+                    <td>$10.00</td>
+                </tr>
+                <tr>
+                    <td>Delviry</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$448.00</td>
+                </tr>
+                <tr>
+                    <td><a href="" class="bn5">Pay Now</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and Ios Mobile.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png" alt="">
+                        <img src="app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="final logo.png" style="width: 300px;">
+                    <p>Download App for Android and Ios Mobile.</p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>License</li>
+                        <li>Terms of service </li>
+                        <li>Return Policy</li>
+                        <li>Refunds</li>
+
+                    </ul>
+                </div>
+                <div class="footer-col3">
+                    <h3>Follow US</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2020 - 2023 </p>
+        </div>
+    </div>
+
+    <!----------------------------- js for toggle menu ---------------------->
+    <!-----------------------------       copy-past    ------------------------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
